@@ -387,8 +387,7 @@ li.dropdownw {
 }.stick{
     position:sticky;
     position: relative;
-    width:100%;
-    z-index:100;
+z-index:100;
 }
 .dropdown-content a::before {
     content: "";
@@ -925,7 +924,7 @@ h4 {
 
 
 #navbe {
-    margin-top: -6px
+    margin-top: -6px!important;
 }
 
 @media (max-width: 1024px) and (min-width: 899px) {
