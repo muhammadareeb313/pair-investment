@@ -47,7 +47,8 @@ marquee {
 
 .navb3 {
     margin-top: 40px;
-    margin-left: 15%;
+}div#navbarNavDropdown{
+   justify-content: flex-end; 
 }
 
 .plant {
@@ -105,6 +106,7 @@ marquee {
 
 .mission h4 {
     color: red;
+    padding: 0px;
 }
 
 .mission h6 {
@@ -260,11 +262,11 @@ ul {
 }
 
 .bluebackgr {
-    margin-top: 50px;
+    margin-top: -10px;
     background-image: url("./images/background.jpg");
     background-size: 100% 100%;
     padding-bottom: 6%;
-    border: 2px solid #25282E;
+    border: 1px solid red;
 }
 
 
@@ -382,6 +384,11 @@ li.dropdownw {
     width: 22px;
     margin: 5px;
     border: 1px;
+}.stick{
+    position:sticky;
+    position: relative;
+    width:100%;
+    z-index:100;
 }
 .dropdown-content a::before {
     content: "";
@@ -815,7 +822,7 @@ h4 {
 }
 
 .carausalthreecontent button {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .slider3 {
@@ -918,7 +925,7 @@ h4 {
 
 
 #navbe {
-    margin-top: -4px
+    margin-top: -6px
 }
 
 @media (max-width: 1024px) and (min-width: 899px) {
@@ -936,138 +943,6 @@ h4 {
 
 
 }
-
-@media only screen and (max-width: 900px) {
-    marquee {
-        margin: 0px;
-    }
-  
-
-    .plant {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .plantdiv2 {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .plantimg {
-        width: 100vw;
-
-    }
-
-    .carousalsone,
-    .carausaltwo,
-    .carausalthree {
-        width: 80% !important;
-        margin-top: 10px !important;
-
-
-    }
-
-    .footer1 {
-        flex-direction: column;
-        width: 60%;
-
-
-    }
-
-    .lah,
-    .kar {
-        width: 100%;
-        padding: 0% 10%;
-
-    }
-
-    .lah img,
-    .kar img {
-        width: 100%;
-
-    }
-
-    .footer2 {
-        width: 40%;
-    }
-
-    .carousals {
-        display: flex;
-        border: 1px solid red;
-        flex-direction: column;
-    }
-
-    .grid {
-        flex-direction: column;
-        padding-left: 0;
-
-    }
-
-    .grid div {
-        padding-top: 10px;
-    }
-}
-
-
-
-@media screen and (max-width: 600px) {
-    .plant {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .plantdiv2 {
-        width: 100%;
-    }
-
-    .plantimg {
-        width: 100vw;
-
-    }
-
-    .mission {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .visionimg {
-        margin-top: 10px;
-    }
-
-    .mission div {
-        width: 100%;
-    }
-
-    .btn2div {
-        left: 50%;
-    }
-
-    .footer {
-        flex-direction: column;
-    }
-
-    .lastd,
-    .footer,
-    .footer1,
-    .footer2,
-    .kar,
-    .lah {
-        width: 100%;
-    }
-.footer2{
-    padding-top: 0px;
-    padding-left: 50px;
-}
-    .lastp p {
-        width: 100%;
-        font-size: 14px;
-    }
-
-    .lastp {
-        text-align: center;
-    }
-}
-
 
 @media (max-width: 990px) {
     #navbarNavDropdown {
@@ -1152,6 +1027,142 @@ h4 {
     }
 
     #navbe {
-        margin-top: -15px
+        margin-top: -20px!important;
     }
 }
+
+@media only screen and (max-width: 900px) {
+    marquee {
+        margin: 0px;
+    }
+  
+
+    .plant {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plantdiv2 {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .plantimg {
+        width: 100%;
+
+    }
+
+    .carousalsone,
+    .carausaltwo,
+    .carausalthree {
+        width: 80% !important;
+        margin-top: 10px !important;
+
+
+    }
+
+    .footer1 {
+        flex-direction: column;
+        width: 60%;
+
+
+    }
+
+    .lah,
+    .kar {
+        width: 100%;
+        padding: 0% 10%;
+
+    }
+
+    .lah img,
+    .kar img {
+        width: 100%;
+
+    }
+
+    .footer2 {
+        width: 40%;
+    }
+
+    .carousals {
+        display: flex;
+        border: 1px solid red;
+        flex-direction: column;
+    }
+
+    .grid {
+        flex-direction: column;
+        padding-left: 0;
+
+    }
+
+    .grid div {
+        padding-top: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .plant {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plantdiv2 {
+        width: 100%;
+    }.missioncontent {
+        padding-left: 20px;
+    }
+
+    .plantimg {
+        width: 100vw;
+
+    }
+    .footer2 hr {
+        width: 50%;
+    }
+    .mission {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .visionimg {
+        margin-top: 10px;
+    }
+
+    .mission div {
+        width: 100%;
+    }
+
+    .btn2div {
+        left: 50%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .lastd,
+    .footer,
+    .footer1,
+    .footer2,
+    .kar,
+    .lah {
+        width: 100%;
+    }
+.footer2{
+    padding-top: 0px;
+    padding-left: 50px;
+}
+    .lastp p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .lastp {
+        text-align: center;
+    }
+}
+
